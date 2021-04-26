@@ -1,12 +1,21 @@
 module.exports = {
     root: true,
+    env: {
+        es2020: true,
+        node: true,
+    },
     parser: '@typescript-eslint/parser',
-    plugins: [
-        '@typescript-eslint',
-    ],
+    parserOptions: {
+        sourceType: 'module',
+        ecmaVersion: 2020,
+        tsconfigRootDir: __dirname,
+        project: ['./tsconfig.json'],
+    },
+    plugins: ['@typescript-eslint'],
     extends: [
-        'airbnb-typescript',
+        'eslint:recommended',
+        'plugin:@typescript-eslint/recommended',
         'prettier',
-        'prettier/@typescript-eslint',
     ],
+    rules: {},
 };
