@@ -12,9 +12,9 @@ function App() {
                 isLargeRow
             />
             <Row title="Top Rated" fetchUrl={requests.feactTopRated} />
-            <Row title="Action Movies" fetchUrl={requests.feactActionMovies} />
+            <Row title="Action Movies" fetchUrl={requests.feactComedyMovies} />
             <Row title="Comedy Movies" fetchUrl={requests.feactComedyMovies} />
-            <Row title="Horror Movies" fetchUrl={requests.feactHorrorMovies} />
+            <Row title="Horror Movies" fetchUrl={requests.feactComedyMovies} />
             <Row
                 title="Romance Movies"
                 fetchUrl={requests.feactRomanceMovies}
