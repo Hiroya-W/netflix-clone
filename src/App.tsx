@@ -3,10 +3,12 @@ import React from 'react';
 import { Row } from './components/Row';
 import { Banner } from './components/Banner';
 import { requests } from './request';
+import { Nav } from './components/Nav';
 
 function App() {
     return (
         <div className="App">
+            <Nav></Nav>
             <Banner></Banner>
             <Row
                 title="NETFLIX ORIGINALS"
