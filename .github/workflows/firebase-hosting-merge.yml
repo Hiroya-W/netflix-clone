@@ -12,6 +12,9 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - run: yarn --frozen-lockfile --ignore-optional && yarn build
+              env:
+                  CI: false
+                  REACT_APP_TMDB_API_KEY: ${{ secrets.REACT_APP_TMDB_API_KEY }}
             - uses: FirebaseExtended/action-hosting-deploy@v0
               with:
                   repoToken: '${{ secrets.GITHUB_TOKEN }}'
