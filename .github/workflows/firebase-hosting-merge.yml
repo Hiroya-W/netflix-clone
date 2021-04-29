@@ -23,3 +23,4 @@ jobs:
                   projectId: netflix-clone-4acea
               env:
                   FIREBASE_CLI_PREVIEWS: hostingchannels
+                  REACT_APP_TMDB_API_KEY: ${{ secrets.REACT_APP_TMDB_API_KEY }}
